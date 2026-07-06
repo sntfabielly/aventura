@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌸 Aventura Rosa · Capa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="cover">
+        <!-- DESENHOS SUPERIORES -->
+        <div class="deco-icons">
+            <span>🌸</span>
+            <span>🌷</span>
+            <span>🦋</span>
+            <span>🌸</span>
+            <span>✨</span>
+        </div>
+
+        <!-- TÍTULO DA AVENTURA -->
+        <h1 class="title">
+            <span class="destaque">✨ Aventura</span><br />
+            <span class="destaque">Rosa</span> 🌸
+        </h1>
+        <div class="subtitle">
+            🌺 · mistério & magia · 🌺
+        </div>
+
+        <!-- BOTÃO INICIAR -->
+        <button class="btn-iniciar" id="botaoIniciar">
+            🚀 Iniciar Aventura
+        </button>
+
+        <!-- Texto de apoio -->
+        <div class="flores-baixo">
+            <span>🌹</span>
+            <span>💖</span>
+            <span>🌺</span>
+            <span>🦄</span>
+            <span>🌸</span>
+        </div>
+
+        <p class="mensagem-rodape">
+            🌷 clique e comece a jornada 🌷
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌸 Aventura Rosa · A História</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container-historia">
+        <!-- Cabeçalho da aventura -->
+        <div class="header-historia">
+            <h2>🌸 A Jornada Rosa</h2>
+            <button class="btn-voltar" id="btnVoltar">🏠 Voltar ao Início</button>
+        </div>
+
+        <!-- Progresso da aventura -->
+        <div class="progresso">
+            <span id="passoAtual">Passo 1 de 5</span>
+            <div class="barra-progresso">
+                <div class="progresso-preenchido" id="progressoBarra" style="width: 20%"></div>
+            </div>
+        </div>
+
+        <!-- Área principal da história -->
+        <div class="historia-content" id="historiaContent">
+            <div class="cena">
+                <div class="emoji-cena">🌺</div>
+                <h3 id="tituloCena">O Início da Jornada</h3>
+                <p id="descricaoCena">
+                    Você está em um jardim encantado, rodeado por flores que brilham com luz própria. 
+                    Um caminho de pétalas rosas se estende à sua frente. Para onde você vai?
+                </p>
+                <div class="opcoes" id="opcoesContainer">
+                    <button class="opcao-btn" data-escolha="1">🌹 Seguir o caminho das pétalas</button>
+                    <button class="opcao-btn" data-escolha="2">🦋 Explorar o bosque de borboletas</button>
+                    <button class="opcao-btn" data-escolha="3">✨ Observar o lago dos desejos</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback interativo -->
+        <div id="feedbackContainer" class="feedback-container" style="display: none;">
+            <div class="feedback-box">
+                <span id="feedbackEmoji">🌟</span>
+                <p id="feedbackTexto">Você fez uma escolha mágica!</p>
+                <button class="btn-continuar" id="btnContinuar">Continuar ➜</button>
+            </div>
+        </div>
+
+        <!-- Rodapé com estatísticas -->
+        <div class="footer-historia">
+            <span>💫 Aventureiro(a) corajoso(a)</span>
+            <span id="contadorEscolhas">Escolhas: 0</span>
+        </div>
+    </div>
+
+    <script src="historia.js"></script>
+</body>
+</html>
